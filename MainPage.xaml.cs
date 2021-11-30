@@ -17,6 +17,7 @@ namespace MauiMac
 		{
 			count++;
 			BtnClicked.Text = $"{count} keer geklikt.";
+			Prgrss.Progress = count > 100 ? 1 : count * .01;
 		}
 	}
 }
