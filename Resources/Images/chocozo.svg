@@ -1,0 +1,10 @@
+<svg width="250" height="40" xmlns="http://www.w3.org/2000/svg">
+ <title>Chocozo</title>
+ <g>
+  <title>Layer 1</title>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Open Sans'" font-size="34" id="svg_2" y="33" x="18.5" stroke-width="0" stroke="#000" fill="#000000">CHOCOZO</text>
+  <line stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="4" x2="220.5" y1="35" x1="198.5" stroke="#000" fill="none"/>
+  <line stroke-width="8" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_4" y2="4" x2="233.5" y1="35" x1="211.5" stroke="#000" fill="none"/>
+ </g>
+
+</svg>
