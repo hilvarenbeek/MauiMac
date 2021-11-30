@@ -4,7 +4,7 @@
              BackgroundColor="{DynamicResource SecondaryColor}">
 
     <ScrollView>
-        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto"
+        <Grid RowSpacing="25" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto"
               Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
 
             <Image Grid.Row="0"
@@ -28,7 +28,7 @@
                 FontSize="18"
                 HorizontalOptions="Start" />
 
-            <Label 
+            <Entry 
                 Text="Chocoladecode"
                 Grid.Row="3"
                 FontSize="18"
@@ -40,12 +40,17 @@
                 FontSize="18"
                 HorizontalOptions="Start" />
 
-             <Label 
+             <Entry 
                 Text="Suikernummer"
                 Grid.Row="5"
                 FontSize="18"
                 HorizontalOptions="Start" />
 
-        </Grid>
+            <Button
+                Text="Bevestig" Grid.Row="6" WidthRequest="120" Clicked="BtnBevestig_Clicked" />
+
+            <Label Text="0 keer geklikt" Grid.Row="6" HorizontalOptions="End" x:Name="BtnClicked" />
+
+       </Grid>
     </ScrollView>
 </ContentPage>

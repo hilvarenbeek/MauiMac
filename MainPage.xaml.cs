@@ -13,12 +13,10 @@ namespace MauiMac
 			InitializeComponent();
 		}
 
-		private void OnCounterClicked(object sender, EventArgs e)
+		private void BtnBevestig_Clicked(object sender, EventArgs e)
 		{
 			count++;
-			//CounterLabel.Text = $"Current count: {count}";
-
-			//SemanticScreenReader.Announce(CounterLabel.Text);
+			BtnClicked.Text = $"{count} keer geklikt.";
 		}
 	}
 }
