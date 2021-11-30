@@ -11,13 +11,22 @@ namespace MauiMac
 		public MainPage()
 		{
 			InitializeComponent();
+			ReadClipboard();
+		}
+
+		private void ReadClipboard()
+        {
+			if (Clipboard.HasText)
+			{
+				Chcode.Text = Clipboard.GetTextAsync().GetAwaiter().GetResult();
+            }
 		}
 
 		private void BtnBevestig_Clicked(object sender, EventArgs e)
 		{
 			count++;
 			BtnClicked.Text = $"{count} keer geklikt.";
-			Prgrss.Progress = count > 100 ? 1 : count * .01;
+			Prgrss.Progress = count > 10 ? 1 : count * .1;
 		}
 	}
 }
